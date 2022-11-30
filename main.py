@@ -15,7 +15,7 @@ def greet(name=''):
 @app.route('/f')
 @app.route('/f/<temp>')
 def temp(temp=0):
-    return f'{ctof(float(temp))}'
+    return f'{temp} Celsius = {ctof(float(temp))} Fahrenheit'
 
 
 def ctof(celsius):
